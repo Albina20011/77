@@ -1,13 +1,13 @@
 package kz.aitu.oop.examples.practice6;
 
-public class Singleton {
+class Singleton {
 
     public String str;
     private static Singleton object;
-    pricate Singleton() {}
+    private Singleton() {}
     public static getSingleInstance() {
-        if(oblect == null) {
-            object = new Singlton();
+        if(object == null) {
+            object = new Singleton();
         }
         return object;
     }
